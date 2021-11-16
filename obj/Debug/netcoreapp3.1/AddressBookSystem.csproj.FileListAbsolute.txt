@@ -1,0 +1,13 @@
+D:\AddressBookSystem\bin\Debug\netcoreapp3.1\AddressBookSystem.exe
+D:\AddressBookSystem\bin\Debug\netcoreapp3.1\AddressBookSystem.deps.json
+D:\AddressBookSystem\bin\Debug\netcoreapp3.1\AddressBookSystem.runtimeconfig.json
+D:\AddressBookSystem\bin\Debug\netcoreapp3.1\AddressBookSystem.runtimeconfig.dev.json
+D:\AddressBookSystem\bin\Debug\netcoreapp3.1\AddressBookSystem.dll
+D:\AddressBookSystem\bin\Debug\netcoreapp3.1\AddressBookSystem.pdb
+D:\AddressBookSystem\obj\Debug\netcoreapp3.1\AddressBookSystem.GeneratedMSBuildEditorConfig.editorconfig
+D:\AddressBookSystem\obj\Debug\netcoreapp3.1\AddressBookSystem.AssemblyInfoInputs.cache
+D:\AddressBookSystem\obj\Debug\netcoreapp3.1\AddressBookSystem.AssemblyInfo.cs
+D:\AddressBookSystem\obj\Debug\netcoreapp3.1\AddressBookSystem.csproj.CoreCompileInputs.cache
+D:\AddressBookSystem\obj\Debug\netcoreapp3.1\AddressBookSystem.dll
+D:\AddressBookSystem\obj\Debug\netcoreapp3.1\AddressBookSystem.pdb
+D:\AddressBookSystem\obj\Debug\netcoreapp3.1\AddressBookSystem.genruntimeconfig.cache
