@@ -1,42 +1,27 @@
 ﻿using System;
 
-namespace AddressBookSystem
+namespace AddressBookSystem2
 {
     class Program
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Address { get; set; }
-        public string City { get; set; }
-
-        public string State { get; set; }
-
-        public int ZipCode { get; set; }
-
-        public double PhoneNumber { get; set; }
-        public string Email { get; set; }
-        public void displayContact()
+        public static void Main(string[] args)
         {
-            Console.WriteLine(this.FirstName + " " + this.LastName + " " + this.City + " " + this.Address + " " + this.State + " " + this.ZipCode + " " + this.PhoneNumber + " " + this.Email);
-        }
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Enter Firstname,LastName,Address,City,State,Zipcode,Phone,Email\n");
+            Console.WriteLine("Enter number of contact entries you want to have: ");
+            int num = int.Parse(Console.ReadLine());
 
-
-            Program obj = new Program()//object initializer
+            ContactPerson obj = new ContactPerson();
+            for (int i = 0; i < num; i++)
             {
-                FirstName = Console.ReadLine(),
-                LastName = Console.ReadLine(),
-                Address = Console.ReadLine(),
-                City = Console.ReadLine(),
-                State = Console.ReadLine(),
-                ZipCode = Convert.ToInt32(Console.ReadLine()),
-                PhoneNumber = Convert.ToDouble(Console.ReadLine()),
-                Email = Console.ReadLine(),
 
-            };
-            obj.displayContact();
+                obj.AddContact();
+            }
+            Console.WriteLine("Do you want to see Addressbook entries(y/Y) :");
+            char ch = char.Parse(Console.ReadLine());
+            if (ch == 'y' || ch == 'Y')
+            {
+                obj.displayContact();
+            }
+
         }
     }
 }

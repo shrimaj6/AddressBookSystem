@@ -11,3 +11,4 @@ D:\AddressBookSystem\obj\Debug\netcoreapp3.1\AddressBookSystem.csproj.CoreCompil
 D:\AddressBookSystem\obj\Debug\netcoreapp3.1\AddressBookSystem.dll
 D:\AddressBookSystem\obj\Debug\netcoreapp3.1\AddressBookSystem.pdb
 D:\AddressBookSystem\obj\Debug\netcoreapp3.1\AddressBookSystem.genruntimeconfig.cache
+D:\AddressBookSystem\obj\Debug\netcoreapp3.1\AddressBookSystem.csproj.AssemblyReference.cache
