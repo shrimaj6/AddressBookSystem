@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AddressBookSystem4
+namespace AddressBookSystem3
 {
     class Program
     {
@@ -21,15 +21,23 @@ namespace AddressBookSystem4
             {
                 obj.displayContact();
             }
+            //int v = obj.siz();
+            //0Console.WriteLine(v);
+            Console.WriteLine("enter name you want to remove :");
+            string str = Console.ReadLine();
+            obj.deleteContact(str);
 
-            Console.WriteLine("You Want to update(y/n) :");
-            char ch11 = char.Parse(Console.ReadLine());
-            if (ch11 == 'y')
+            Console.WriteLine("Do you want to see Addressbook entries(y/Y) :");
+            char ch1 = char.Parse(Console.ReadLine());
+            if (ch1 == 'y' || ch1 == 'Y')
             {
-                Console.WriteLine("Enter name You Want to update :");
-                string str1 = Console.ReadLine();
-                obj.updateContact(str1);
+                obj.displayContact();
             }
+
+            Console.WriteLine("Enter name You Want to update :");
+            string str1 = Console.ReadLine();
+            obj.updateContact(str1);
+
 
 
             Console.WriteLine("Do you want to see Addressbook entries(y/Y) :");
@@ -38,6 +46,7 @@ namespace AddressBookSystem4
             {
                 obj.displayContact();
             }
+
         }
     }
 }

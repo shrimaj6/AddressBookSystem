@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
-namespace AddressBookSystem4
+namespace AddressBookSystem3
 {
     class ContactPerson
     {
@@ -24,16 +23,24 @@ namespace AddressBookSystem4
         {
             foreach (var item in objList)
             {
-                Console.WriteLine(item.FirstName + " " + item.LastName + " " + item.Address + " " + item.City + " " + item.State + " " + item.ZipCode + " " + item.PhoneNumber + " " + item.Email);
+                Console.WriteLine(item.FirstName + " " + this.LastName + " " + this.Address + " " + item.City + " " + item.State + " " + item.ZipCode + " " + item.PhoneNumber + " " + item.Email);
             }
-            //Console.WriteLine(this.FirstName + " " + this.City + " " + this.State + " " + this.ZipCode + " " + this.PhoneNumber + " " + this.Email);
+
 
 
         }
-        //  public int siz()
-        //{
-        //  return objList.Count();
-        //}
+
+        public void deleteContact(string name)
+        {
+            foreach (var item in objList)
+            {
+                if (item.FirstName == name)
+                {
+                    objList.Remove(item);
+                    return;
+                }
+            }
+        }
         public void updateContact(string name)
         {
 
@@ -124,20 +131,7 @@ namespace AddressBookSystem4
             }
 
         }
-        public void deleteContact(string s)
-        {
 
-            foreach (var item in objList)
-            {
-                if (item.FirstName == s)
-                {
-
-
-                    objList.Remove(item);
-                    return;
-                }
-            }
-        }
         public void AddContact()
         {
 
@@ -148,7 +142,7 @@ namespace AddressBookSystem4
             ContactPerson contact = new ContactPerson()//object initializer
             {
                 FirstName = Console.ReadLine(),
-                LastName = Console.ReadLine(), 
+                LastName = Console.ReadLine(),
                 Address = Console.ReadLine(),
                 City = Console.ReadLine(),
                 State = Console.ReadLine(),
